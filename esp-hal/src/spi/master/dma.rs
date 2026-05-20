@@ -41,6 +41,8 @@ use crate::{
 };
 #[cfg(dma_can_access_psram)]
 use crate::{dma::ManualWritebackBuffer, soc::is_slice_in_psram};
+#[cfg(place_spi_master_driver_in_ram)]
+use procmacros::ram;
 
 const MAX_DMA_SIZE: usize = 32736;
 
